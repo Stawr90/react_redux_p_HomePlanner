@@ -1,0 +1,14 @@
+.app {
+    height: 100vh;
+    overflow-y: scroll;
+    background: url('../../assets/planner_bg.jpg') center / cover no-repeat;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 400px 600px;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding-top: 50px;
+    gap: 30px;
+}

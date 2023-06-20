@@ -1,0 +1,39 @@
+.list {
+    min-height: 50vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+
+    .nav {
+        padding: 0px 0px 15px 15px;
+        border-bottom: 2px solid #2e2e2e;
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    ul {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        list-style-type: none;
+        row-gap: 10px;
+
+        li {
+            max-width: 120px;
+            max-height: 120px;
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+
+
+}

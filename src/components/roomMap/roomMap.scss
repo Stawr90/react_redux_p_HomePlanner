@@ -1,0 +1,96 @@
+.map {
+    height: 80vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
+    border-radius: 10px;
+    background-color: black;
+    overflow: hidden;
+
+    &__title {
+        padding: 15px;
+        border-bottom: 2px solid #2e2e2e;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+            display: flex;
+            align-items: center;
+        }
+
+        p {
+            font-weight: 700;
+            margin-left: 40px;
+            font-size: 24px;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            align-items: center;
+            gap: 8px;
+
+            input {
+                color: transparent;
+                width: 122px;
+            }
+
+            input::-webkit-file-upload-button {
+                color: green;
+                padding: 2px 5px;
+                border: 3px solid green;
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__board {
+        position: relative;
+        padding: 10px;
+        height: 89%;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+
+        button {
+            position: absolute;
+            bottom: 12px;
+            border: none;
+            background-color: orange;
+            color: #fff;
+            z-index: 100;
+
+            &:hover {
+                background-color: red;
+                color: #000000;
+            }
+        }
+    }
+
+    &__img {
+        max-width: 80px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    padding: 2px 8px;
+    color: blue;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:hover {
+        color: orange;
+        transition: all 0.7s;
+    }
+}
